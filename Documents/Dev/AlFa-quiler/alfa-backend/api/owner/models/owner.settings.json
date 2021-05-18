@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "owners",
+  "info": {
+    "name": "owner",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "flats": {
+      "collection": "flat"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

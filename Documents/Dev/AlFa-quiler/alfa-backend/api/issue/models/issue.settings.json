@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "issues",
+  "info": {
+    "name": "issue",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "problem": {
+      "type": "text"
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "solved": {
+      "type": "boolean"
+    },
+    "progress": {
+      "type": "text"
+    },
+    "flat": {
+      "model": "flat"
+    }
+  }
+}

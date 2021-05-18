@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "flats",
+  "info": {
+    "name": "flat",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "rent": {
+      "type": "string"
+    },
+    "info": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
